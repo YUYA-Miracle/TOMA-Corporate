@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | TOMA</title>
-<meta name="description" content="TOMAへのお問い合わせはこちらから。">
+<title>Contact | 合同会社TOMA</title>
+<meta name="description" content="合同会社TOMAへのお問い合わせ。戦略コンサルティング、ソフトウェア開発、調査レポートに関するご相談をお気軽にどうぞ。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+JP:wght@200;300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+JP:wght@200;300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="business.html">Business</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="active nav-cta">Contact</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Menu">
       <span></span><span></span>
@@ -29,8 +29,11 @@
 
 <header class="page-header">
   <div class="container">
-    <span class="page-eyebrow">Contact</span>
-    <h1 class="page-title"><em>Begin</em> a<br><em>conversation.</em></h1>
+    <span class="page-eyebrow">Contact · お問い合わせ</span>
+    <h1 class="page-title">
+      <em>Begin</em> a<br><em>conversation.</em>
+      <span class="jp">まずは、お話を。</span>
+    </h1>
   </div>
 </header>
 
@@ -39,19 +42,19 @@
     <div class="contact-grid">
       <aside class="contact-info">
         <span class="label-num">01 —</span>
-        <h2 class="section-title">Get in Touch</h2>
-        <p>事業提携、投資、取材など、<br>お問い合わせ内容を具体的にお書きください。<br>内容を確認のうえ、担当よりご連絡いたします。</p>
+        <h2 class="section-title">Get in <em>Touch</em></h2>
+        <p>事業提携、コンサルティング、開発案件、<br>調査レポートのご相談など、<br>お気軽にお問い合わせください。<br>3営業日以内にご返信いたします。</p>
         <div class="info-block">
           <h4>Email</h4>
-          <a href="mailto:nuta@toma.asia" class="info-mail">nuta@toma.asia</a>
-        </div>
-        <div class="info-block">
-          <h4>Location</h4>
-          <p>Tokyo · Riyadh<br>Dubai · Lombok</p>
+          <a href="mailto:info@toma.asia" class="info-mail">info@toma.asia</a>
         </div>
         <div class="info-block">
           <h4>Hours</h4>
-          <p>平日 10:00 – 18:00 JST</p>
+          <p>平日 12:00 – 18:00<br>(土日祝日は休業)</p>
+        </div>
+        <div class="info-block">
+          <h4>Response</h4>
+          <p>3営業日以内</p>
         </div>
       </aside>
 
@@ -60,8 +63,23 @@
         <h2 class="section-title">Message</h2>
 
         <div class="form-row">
-          <label for="name">
+          <label for="category">
             <span class="label-no">01</span>
+            <span class="label-txt">お問い合わせ種別 <em>*</em></span>
+          </label>
+          <select id="category" name="category" required>
+            <option value="">選択してください</option>
+            <option value="consulting">戦略コンサルティングについて</option>
+            <option value="development">ソフトウェア開発について</option>
+            <option value="research">調査・レポート発行について</option>
+            <option value="pricing">料金・見積もりについて</option>
+            <option value="other">その他のお問い合わせ</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="name">
+            <span class="label-no">02</span>
             <span class="label-txt">お名前 <em>*</em></span>
           </label>
           <input type="text" id="name" name="name" required>
@@ -69,33 +87,18 @@
 
         <div class="form-row">
           <label for="company">
-            <span class="label-no">02</span>
-            <span class="label-txt">会社名</span>
+            <span class="label-no">03</span>
+            <span class="label-txt">会社名・団体名</span>
           </label>
           <input type="text" id="company" name="company">
         </div>
 
         <div class="form-row">
           <label for="email">
-            <span class="label-no">03</span>
+            <span class="label-no">04</span>
             <span class="label-txt">メールアドレス <em>*</em></span>
           </label>
           <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-row">
-          <label for="subject">
-            <span class="label-no">04</span>
-            <span class="label-txt">ご用件 <em>*</em></span>
-          </label>
-          <select id="subject" name="subject" required>
-            <option value="">選択してください</option>
-            <option value="business">事業提携・協業</option>
-            <option value="investment">投資・資金調達</option>
-            <option value="realestate">不動産取引</option>
-            <option value="press">取材・メディア</option>
-            <option value="other">その他</option>
-          </select>
         </div>
 
         <div class="form-row">
@@ -111,7 +114,7 @@
           <span class="arrow">→</span>
         </button>
 
-        <p class="form-note">送信いただいた内容は、お問い合わせ対応の目的にのみ使用します。</p>
+        <p class="form-note">お預かりした個人情報は、お問い合わせへの回答以外の目的では使用いたしません。</p>
       </form>
     </div>
   </div>
@@ -122,9 +125,10 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo">TOMA</div>
-        <p>Crafting value beyond borders.</p>
+        <p>Crafting solutions with precision.</p>
+        <div class="company-name">合同会社TOMA</div>
       </div>
-      <div class="footer-links">
+      <div class="footer-col">
         <h4>Navigation</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -133,14 +137,30 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <div class="footer-info">
-        <h4>Headquarters</h4>
-        <p>東京都<br>nuta@toma.asia</p>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="business.html#consulting">戦略コンサルティング</a></li>
+          <li><a href="business.html#development">ソフトウェア開発</a></li>
+          <li><a href="business.html#research">調査・レポート発行</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">利用規約</a></li>
+          <li><a href="tokushoho.html">特定商取引法表記</a></li>
+          <li><a href="detective.html">探偵業届出標識</a></li>
+        </ul>
       </div>
     </div>
     <div class="footer-base">
-      <span>© 2026 TOMA. All rights reserved.</span>
-      <span>Tokyo · Riyadh · Dubai · Lombok</span>
+      <span>© 2026 合同会社TOMA. All rights reserved.</span>
+      <div class="footer-licenses">
+        <span>電気通信事業 A-07-22834</span>
+        <span>探偵業 第45250073号</span>
+        <span>古物商 第452500029915号</span>
+      </div>
     </div>
   </div>
 </footer>
