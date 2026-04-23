@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | TOMA</title>
+<meta name="description" content="TOMAへのお問い合わせはこちらから。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+JP:wght@200;300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">TOMA</a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="business.html">Business</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <span class="page-eyebrow">Contact</span>
+    <h1 class="page-title"><em>Begin</em> a<br><em>conversation.</em></h1>
+  </div>
+</header>
+
+<section class="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <aside class="contact-info">
+        <span class="label-num">01 —</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p>事業提携、投資、取材など、<br>お問い合わせ内容を具体的にお書きください。<br>内容を確認のうえ、担当よりご連絡いたします。</p>
+        <div class="info-block">
+          <h4>Email</h4>
+          <a href="mailto:nuta@toma.asia" class="info-mail">nuta@toma.asia</a>
+        </div>
+        <div class="info-block">
+          <h4>Location</h4>
+          <p>Tokyo · Riyadh<br>Dubai · Lombok</p>
+        </div>
+        <div class="info-block">
+          <h4>Hours</h4>
+          <p>平日 10:00 – 18:00 JST</p>
+        </div>
+      </aside>
+
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <span class="label-num">02 —</span>
+        <h2 class="section-title">Message</h2>
+
+        <div class="form-row">
+          <label for="name">
+            <span class="label-no">01</span>
+            <span class="label-txt">お名前 <em>*</em></span>
+          </label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="company">
+            <span class="label-no">02</span>
+            <span class="label-txt">会社名</span>
+          </label>
+          <input type="text" id="company" name="company">
+        </div>
+
+        <div class="form-row">
+          <label for="email">
+            <span class="label-no">03</span>
+            <span class="label-txt">メールアドレス <em>*</em></span>
+          </label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="subject">
+            <span class="label-no">04</span>
+            <span class="label-txt">ご用件 <em>*</em></span>
+          </label>
+          <select id="subject" name="subject" required>
+            <option value="">選択してください</option>
+            <option value="business">事業提携・協業</option>
+            <option value="investment">投資・資金調達</option>
+            <option value="realestate">不動産取引</option>
+            <option value="press">取材・メディア</option>
+            <option value="other">その他</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">
+            <span class="label-no">05</span>
+            <span class="label-txt">お問い合わせ内容 <em>*</em></span>
+          </label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">
+          <span>Send Message</span>
+          <span class="arrow">→</span>
+        </button>
+
+        <p class="form-note">送信いただいた内容は、お問い合わせ対応の目的にのみ使用します。</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">TOMA</div>
+        <p>Crafting value beyond borders.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="business.html">Business</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <h4>Headquarters</h4>
+        <p>東京都<br>nuta@toma.asia</p>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 TOMA. All rights reserved.</span>
+      <span>Tokyo · Riyadh · Dubai · Lombok</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
